@@ -62,7 +62,7 @@ def print_side_diagonal(_matrix):
 def print_both_diagonals_without_center(_matrix):
     def even(_size):
         """ Return True if even """
-        return True if size % 2 == 0 else False
+        return True if _size % 2 == 0 else False
 
     res_side = []
     res_forward = []
@@ -95,7 +95,7 @@ def print_spiral(_matrix):
     print(res)
 
 
-matrix = generate_print_matrix(6)
+matrix = generate_print_matrix(5)
 
 # print_forward_matrix(matrix)
 # print_reverse_matrix(matrix)
@@ -103,6 +103,6 @@ matrix = generate_print_matrix(6)
 # print_diagonal(matrix)
 # print_side_diagonal(matrix)
 #
-# print_both_diagonals_without_center(matrix)
+print_both_diagonals_without_center(matrix)
 
-print_spiral(matrix)
+# print_spiral(matrix)
